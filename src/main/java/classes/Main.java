@@ -10,12 +10,9 @@ public class Main {
 		miniBox.addItems(orange);
 		miniBox.addItems(coffe);
 		
-		miniBox.print();
-		
-		//FIXME
-		//CompositeItem box = new CompositeItem("Box", 2);
-		//box.addItems(box);
-		//box.print();
+		CompositeItem box = new CompositeItem("Box", 2);
+		box.addItems(miniBox);
+		box.print();
 	}
 
 }
