@@ -1,24 +1,12 @@
-apply plugin: "java"
-apply plugin: "groovy"
-apply plugin: "eclipse"
+subprojects {
+    apply plugin: "java"
+    apply plugin: "eclipse"
 
-repositories {
-  mavenCentral()
-}
-
-sourceSets {
-    main {
-        java {
-            srcDir 'src/main/java'
-        }
+    repositories {
+        mavenCentral()
     }
-}
 
-dependencies {
-  compile "org.codehaus.groovy:groovy-all:2.4.1"
-  testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
-
-  testRuntime "cglib:cglib-nodep:3.1"
-  testRuntime "org.objenesis:objenesis:2.1"
-
+    eclipse.project {
+  	    natures 'org.eclipse.buildship.core.gradleprojectnature'
+    }
 }
