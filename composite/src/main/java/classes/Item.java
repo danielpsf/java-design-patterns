@@ -10,11 +10,6 @@ public class Item extends AbstractComponent {
 		super(name, size);
 	}
 
-	@Override
-	public String getInfo() {
-		return "Item name: " + this.getName() + ". Item size: " + this.getSize();
-	}
-
 	public String getName() {
 		return this.name;
 	}
@@ -23,12 +18,12 @@ public class Item extends AbstractComponent {
 		this.name = name;
 	}
 
-	public double getSize() {
-		return size;
+	public double getPrice() {
+		return price;
 	}
 
 	public void setSize(float size) {
-		this.size = size;
+		this.price = size;
 	}
 
 }

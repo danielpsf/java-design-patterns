@@ -3,39 +3,32 @@ package classes;
 import java.util.ArrayList;
 import java.util.List;
 
-import interfaces.ItemBase;
-
 public class Group extends AbstractComponent {
 	private List<AbstractComponent> items = new ArrayList<AbstractComponent>();
 	
 	public Group() {
 		super();
-		super.setGroup(true);
 	}
 
 	public Group(String name, double size) {
-		super(name, size, true);
+		super(name, size);
 	}
 
 	@Override
-	public String getInfo() {
-		StringBuilder strBuilder = new StringBuilder();
-		
-		strBuilder.append("\r\tBox of items containing:\r ");
-		
+	public double getPrice() {
+		double price = 0;		
 		for (AbstractComponent item : items) {
-			strBuilder.append("\t\t- ");
-			strBuilder.append(item.getInfo());
+			price += item.getPrice();
 		}
 		
-		return strBuilder.toString();
+		return price;
 	}
 
 	public List<AbstractComponent> getItems() {
 		return items;
 	}
 
-	public void addItems(AbstractComponent item) {
+	public void add(AbstractComponent item) {
 		this.items.add(item);
 	}
 	

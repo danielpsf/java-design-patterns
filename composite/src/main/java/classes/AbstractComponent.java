@@ -2,19 +2,13 @@ package classes;
 
 public abstract class AbstractComponent {
 	protected String name;
-	protected double size;
-	protected boolean group = false;
+	protected double price;
 	
 	public AbstractComponent() {}
 
-	public AbstractComponent(String name, double size) {
+	public AbstractComponent(String name, double price) {
 		this.name = name;
-		this.size = size;
-	}
-	
-	public AbstractComponent(String name, double size, boolean group) {
-		this(name, size);
-		this.setGroup(group);
+		this.price = price;
 	}
 
 	public String getName() {
@@ -25,21 +19,11 @@ public abstract class AbstractComponent {
 		this.name = name;
 	}
 	
-	public double getSize() {
-		return size;
+	public double getPrice() {
+		return price;
 	}
 
-	public void setSize(double size) {
-		this.size = size;
+	public void setPrice(double size) {
+		this.price = size;
 	}
-	
-	public boolean isGroup() {
-		return group;
-	}
-
-	public void setGroup(boolean group) {
-		this.group = group;
-	}
-
-	public String getInfo() { return null; }
 }

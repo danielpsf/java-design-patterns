@@ -6,19 +6,21 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
-import interfaces.ItemBase;
-
 public class CompositeSpec {
 
 	@Test
 	public void should_treat_items_the_same_way_as_groups() {
-		Item item = new Item("test_item", 5.0);
+		Item item1 = new Item("test_item_1", 5.0);
+		Item item2 = new Item("test_item_2", 2.0);
 		Group group = new Group();
+		group.add(item1);
+		group.add(item2);
 		
-		group.addItems(item);
+		double item1Price = item1.getPrice();
+		double groupPrice = group.getPrice();
 		
-		assertThat(item.getInfo(), is(equalTo("Item name: test_item. Item size: 5.0")));
-		assertThat(group.getInfo(), is(equalTo("\r\tBox of items containing:\r \t\t- Item name: test_item. Item size: 5.0")));
+		assertThat(item1Price, is(equalTo(5.0)));
+		assertThat(groupPrice, is(equalTo(7.0)));
 	}
 
 }
