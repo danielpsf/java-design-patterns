@@ -2,11 +2,9 @@ package classes;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
-import org.mockito.Mockito;
 
 import interfaces.ItemBase;
 
