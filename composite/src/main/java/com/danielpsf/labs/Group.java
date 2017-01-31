@@ -1,4 +1,4 @@
-package classes;
+package com.danielpsf.labs;
 
 import java.util.ArrayList;
 import java.util.List;

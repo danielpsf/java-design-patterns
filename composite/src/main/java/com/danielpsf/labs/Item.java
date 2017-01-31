@@ -1,4 +1,4 @@
-package classes;
+package com.danielpsf.labs;
 
 public class Item extends AbstractComponent {
 
