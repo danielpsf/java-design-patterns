@@ -1,10 +1,13 @@
-package classes;
+package com.danielpsf.labs;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
+
+import com.danielpsf.labs.Group;
+import com.danielpsf.labs.Item;
 
 public class CompositeSpec {
 
