@@ -18,12 +18,13 @@ public class Item extends AbstractComponent {
 		this.name = name;
 	}
 
-	public double getPrice() {
-		return price;
-	}
-
 	public void setSize(float size) {
 		this.price = size;
+	}
+
+	@Override
+	public double getPrice() {
+		return this.price;
 	}
 
 }

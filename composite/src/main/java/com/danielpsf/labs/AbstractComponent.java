@@ -19,9 +19,7 @@ public abstract class AbstractComponent {
 		this.name = name;
 	}
 	
-	public double getPrice() {
-		return price;
-	}
+	public abstract double getPrice();
 
 	public void setPrice(double size) {
 		this.price = size;
