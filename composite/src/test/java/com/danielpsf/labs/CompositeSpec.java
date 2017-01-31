@@ -20,9 +20,11 @@ public class CompositeSpec {
 		group.add(item2);
 		
 		double item1Price = item1.getPrice();
+		double item2Price = item2.getPrice();
 		double groupPrice = group.getPrice();
 		
 		assertThat(item1Price, is(equalTo(5.0)));
+		assertThat(item2Price, is(equalTo(2.0)));
 		assertThat(groupPrice, is(equalTo(7.0)));
 	}
 
