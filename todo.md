@@ -13,3 +13,4 @@ _\( managed using [todo-md](https://github.com/Hypercubed/todo-md) \)_
 - [ ] Proxy
 - [ ] Strategy
 - [ ] Visitor
+- [ ] Command
