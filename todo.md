@@ -4,7 +4,7 @@ _\( managed using [todo-md](https://github.com/Hypercubed/todo-md) \)_
 
 - [x] Composite
 - [x] Builder
-- [ ] Factory
+- [x] Factory
 - [ ] Chain Responsability
 - [ ] Adapter
 - [ ] Singleton
