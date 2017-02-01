@@ -1,4 +1,4 @@
-## Design pattern sudy labs
+## Design pattern study
 
 [![Build Status](https://travis-ci.org/danielpsf/java-design-patterns.svg?branch=master)](https://travis-ci.org/danielpsf/java-design-patterns)
 
