@@ -5,6 +5,7 @@ _\( managed using [todo-md](https://github.com/Hypercubed/todo-md) \)_
 - [x] Composite
 - [x] Builder
 - [x] Factory
+- [x] Command
 - [ ] Chain Responsability
 - [ ] Adapter
 - [ ] Singleton
@@ -13,5 +14,5 @@ _\( managed using [todo-md](https://github.com/Hypercubed/todo-md) \)_
 - [ ] Proxy
 - [ ] Strategy
 - [ ] Visitor
-- [ ] Command
 - [ ] Observer
+- [ ] help
