@@ -1,1 +1,1 @@
-include 'composite', 'builder', 'factory'
+include 'composite', 'builder', 'factory', 'command'
