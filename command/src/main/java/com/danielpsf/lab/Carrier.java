@@ -3,6 +3,9 @@ package com.danielpsf.lab;
 public class Carrier implements HyperSpaceShip {
 	private String coordinates;
 	
+	public Carrier() {
+	}
+	
 	public Carrier(String coordinates) {
 		this.coordinates = coordinates;
 	}
@@ -15,5 +18,4 @@ public class Carrier implements HyperSpaceShip {
 	public void executeJump() {
 		jumpToCoordinates();
 	}
-
 }

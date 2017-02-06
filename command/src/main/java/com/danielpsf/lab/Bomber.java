@@ -8,8 +8,7 @@ public class Bomber implements HyperSpaceShip {
 		this.coordinates = coordinates;
 	}
 	
-	private void heatHyperDrives() throws InterruptedException {
-		Thread.sleep(100);
+	private void heatHyperDrives() throws Exception {
 		System.out.println("Heating hyperdrives.");
 	}
 	
@@ -18,7 +17,7 @@ public class Bomber implements HyperSpaceShip {
 	}
 
 	@Override
-	public void executeJump() throws InterruptedException {
+	public void executeJump() throws Exception {
 		heatHyperDrives();
 		jumpToCoordinates();
 	}

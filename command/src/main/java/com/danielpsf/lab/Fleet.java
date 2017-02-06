@@ -14,12 +14,16 @@ public class Fleet {
 		ships.add(ship);
 	}
 	
+	public void takeEvasiveManeuver() {
+		System.out.println("Jump has failed. Execute evasive maneuvers!");
+	}
+	
 	public void jump() {
 		for (HyperSpaceShip ship : ships) {
 			try {
 				ship.executeJump();
-			} catch (InterruptedException e) {
-				System.out.println("Jump has failed. Execute evasive maneuvers!");
+			} catch (Exception e) {
+				takeEvasiveManeuver();
 			}
 		}
 	}
